@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #a477ff;
+    width: 100%;
+    height: 20%;
+}
+
+.FirstImg{
+    margin-top: 2px;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+  
+  .FirstTittle{
+    color: white;
+    font-size: 40px;
+  }
+  

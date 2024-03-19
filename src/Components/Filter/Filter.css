@@ -1,0 +1,11 @@
+.CreateTaskZone {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.TittleInput{
+    font-size: 30px;
+    color: white;
+}
