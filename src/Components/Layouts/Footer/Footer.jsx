@@ -1,8 +1,10 @@
 import React from 'react'
 import './Footer.css'
 
-export const Footer = ({children}) => {
+export const Footer = () => {
   return (
-   <footer>{children}</footer>
+    <footer>
+      <h4 className='finalTittle'>Andrés Felipe Ladino Ocampo</h4>
+    </footer>
   )
 }
