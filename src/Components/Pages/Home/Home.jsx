@@ -1,20 +1,27 @@
 import { Header } from '../../Layouts/Header/Header'
 import { Main } from '../../Layouts/Main/Main'
-import { Filter } from '../../Filter/Filter'
-import { Tasks } from '../../Tasks/Tasks'
 import { Footer } from '../../Layouts/Footer/Footer'
-import React from 'react'
+import { ContainerTasks } from '../../Layouts/ContainerTasks/ContainerTasks'
+import { ItemTasks } from '../../ItemTasks/ItemTasks'
+import { NewTask } from '../../NewTask/NewTask'
+import { useContext } from 'react'
+import { tasksContext } from '../../Context/Context'
 
 
 export const Home = () => {
 
-
+  const context = useContext(tasksContext)
+  
   return (
     <>
       <Header/>
-      <Main >
-      <Filter/>
-      <Tasks/>  
+      <Main>
+      <NewTask/>
+      <ContainerTasks>
+        {
+          context.filteredTasks.map(task => <ItemTasks key={task.id} idTask={task.id} content={task.description} titleTask={task.title}></ItemTasks>)
+        }
+      </ContainerTasks>
       </Main>
       <Footer/>
     </>

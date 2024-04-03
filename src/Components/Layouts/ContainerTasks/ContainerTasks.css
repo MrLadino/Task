@@ -1,0 +1,12 @@
+.container-tasks{
+    width: 70rem;
+    height: max-content;
+    background-color: #140231;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12rem;
+    padding: 20px;
+    border: white 3px solid;
+    border-radius: 10px;
+}
