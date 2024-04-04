@@ -1,0 +1,22 @@
+.content-infoTasks{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.info-tasks{
+    color: white;
+    font-size: 30px;
+}
+
+.task-pending{
+    color: red;
+}
+
+.task-done{
+    color: green;
+}
+

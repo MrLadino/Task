@@ -1,6 +1,6 @@
 .container-tasks{
     width: 70rem;
-    height: max-content;
+    height: 12rem;
     background-color: #140231;
     margin-top: 2rem;
     display: flex;
@@ -9,4 +9,12 @@
     padding: 20px;
     border: white 3px solid;
     border-radius: 10px;
+    overflow-y: auto;
+}
+
+ul::-webkit-scrollbar{
+    margin-top: 1.5rem;
+    background-color: #5810cb;
+    width: 1rem;
+    border-radius: 20rem 20rem 20rem 20rem;
 }

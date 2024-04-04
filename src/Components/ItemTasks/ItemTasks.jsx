@@ -10,7 +10,7 @@ export const ItemTasks = ({idTask,content,titleTask}) => {
   const task = tasks.find( task => task.id === idTask)
 
   const handleCheckboxChange = () => {
-    updateTaskStatus(idTask, [task.status])
+    updateTaskStatus(idTask, !task.status);
   }
   
 

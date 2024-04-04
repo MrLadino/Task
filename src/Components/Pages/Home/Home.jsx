@@ -6,6 +6,11 @@ import { ItemTasks } from '../../ItemTasks/ItemTasks'
 import { NewTask } from '../../NewTask/NewTask'
 import { useContext } from 'react'
 import { tasksContext } from '../../Context/Context'
+import { InfoTasks } from '../../Layouts/InfoTasks/InfoTasks'
+import { FilterTasks } from '../../FilteredTasks/FilteredTasks'
+
+
+
 
 
 export const Home = () => {
@@ -16,7 +21,9 @@ export const Home = () => {
     <>
       <Header/>
       <Main>
+      <InfoTasks/>
       <NewTask/>
+      <FilterTasks/>
       <ContainerTasks>
         {
           context.filteredTasks.map(task => <ItemTasks key={task.id} idTask={task.id} content={task.description} titleTask={task.title}></ItemTasks>)
